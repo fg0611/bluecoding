@@ -3,13 +3,13 @@ import axios from "axios";
 import "./App.css";
 
 function App() {
-  const url =
-    "https://api.giphy.com/v1/gifs/trending?api_key=pLURtkhVrUXr3KG25Gy5IvzziV5OrZGa";
+  // should write down API key
+  const url = "https://api.giphy.com/v1/gifs/trending?api_key=";
 
   const [state, setstate] = useState([]);
   const [search, setsearch] = useState("");
   const [found, setfound] = useState(null);
-  // https://api.giphy.com/v1/gifs/search?api_key=pLURtkhVrUXr3KG25Gy5IvzziV5OrZGa&q=cheeseburgers
+  // https://api.giphy.com/v1/gifs/search?
 
   useEffect(async () => {
     const { data } = await axios.get(url);
